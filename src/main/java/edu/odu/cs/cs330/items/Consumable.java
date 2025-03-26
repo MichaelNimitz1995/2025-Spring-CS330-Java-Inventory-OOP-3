@@ -144,8 +144,8 @@ public class Consumable extends Item {
         // Replace the "return false" with your logic
         Consumable rhsItem = (Consumable) rhs;
 
-        return rhsItem.getName() == this.getName()
-            && rhsItem.getEffect() == this.getEffect();
+        return rhsItem.getName().equals(this.getName())
+            && rhsItem.getEffect().equals(this.getEffect());
     }
 
     /**

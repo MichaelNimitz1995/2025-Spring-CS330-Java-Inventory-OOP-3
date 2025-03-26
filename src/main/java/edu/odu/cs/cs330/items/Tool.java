@@ -116,10 +116,10 @@ public class Tool extends Equippable {
 
         Tool rhsItem = (Tool) rhs;
 
-        return rhsItem.getName() == this.getName()
+        return rhsItem.getName().equals(this.getName())
             && rhsItem.getSpeed() == this.getSpeed()
-            && rhsItem.getMaterial() == this.getMaterial()
-            && rhsItem.getModifier() == this.getModifier()
+            && rhsItem.getMaterial().equals(this.getMaterial())
+            && rhsItem.getModifier().equals(this.getModifier())
             && rhsItem.getModifierLevel() == this.getModifierLevel();
     }
 
